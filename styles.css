@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#start, #submitButton, .rePlayButton {
+    font-weight: bold;
+    background-color: #007bff; /* Example background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#questionPage {
+    padding: 20px;
+    border-style: dotted;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-color: #007bff;
+    text-align: center;
+    font-size: large;
+}
+
+/* Style the border between header and footer */
+header{
+    border-bottom: 1px dotted #7777e5;
+}
+
+footer{
+    border-top: 1px dotted #7777e5;
+}
