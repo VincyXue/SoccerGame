@@ -1,28 +1,28 @@
 const directory = [
     {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin"],
-        correctAnswer: "Paris"
+        question: "Which country hosted the 2018 FIFA World Cup?",
+        answers: ["Brazil", "Germany", "Russia"],
+        correctAnswer: "Russia"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        answers: ["Mars", "Jupiter", "Venus"],
-        correctAnswer: "Mars"
+        question: "In soccer, how many players are on the field for each team during a regulation match?",
+        answers: ["8", "11", "10"],
+        correctAnswer: "11"
     },
     {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin"],
-        correctAnswer: "Paris"
+        question: "What is the term for a situation in which one player scores three goals in a single game?",
+        answers: ["Hat-trick", "Touchdown", "Slam dunk"],
+        correctAnswer: "Hat-trick"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        answers: ["Mars", "Jupiter", "Venus"],
-        correctAnswer: "Mars"
+        question: "Which country won the 2020 UEFA European Championship (Euro 2020), which was held in 2021 due to the COVID-19 pandemic?",
+        answers: ["Italy", "France", "Portugal"],
+        correctAnswer: "Italy"
     },
     {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin"],
-        correctAnswer: "Paris"
+        question: "In which year did the United States host the FIFA World Cup for the first time?",
+        answers: ["1986", "1994", "2002"],
+        correctAnswer: "1994"
     },
 ];
 
@@ -44,7 +44,8 @@ startButton.addEventListener('click', function(){
         if (totalTime >= 0) {
             timeLeft.textContent = totalTime + 's';
             totalTime--;
-        } else {
+        }
+        else {
             clearInterval(timerInterval);
             if (count<totalQuestion){
                 count ++, i++;
@@ -127,6 +128,7 @@ function displayQuestion(count, i) {
         let listItem = document.createElement('li');
         listItem.style.listStyleType = 'none';
         listItem.innerText = ele;
+        listItem.id = "selections";
 
         let radioButton = document.createElement('input');
         radioButton.setAttribute('type', 'radio');
