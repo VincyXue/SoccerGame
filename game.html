@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Trivia Game with Timer</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="game.css" rel="stylesheet">
+</head>
+<body>
+    <div id="game">
+      <button id="start"> Start the Game </button>
+        <div id="questionPage" style="display: none;">
+            <header>
+                <p>Soccer Trivia Game</p>
+                <div id="timer">Timer: <span id="timeLeft"></span></div>
+            </header>
+
+            <p id="question">question</p>
+            <ul></ul>
+
+            <footer>
+                <p id="questionCount"></p>
+                <button id="submitButton">Next Que</button>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
